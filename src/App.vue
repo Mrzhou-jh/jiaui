@@ -11,6 +11,10 @@
       <j-button>更多</j-button>
       <j-button svgicon="youjiantou" iconPosition="right">下一页</j-button>
     </j-button-group>
+    <j-input placeholder=""></j-input>
+    <j-input placeholder="输入提示"></j-input>
+    <j-input value="默认文本"></j-input>
+    <j-input value="小1" err="用户名不足两个汉字"></j-input>
   </div>
 </template>
 
