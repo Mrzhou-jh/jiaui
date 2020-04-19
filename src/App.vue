@@ -66,7 +66,7 @@
       <s-input placeholder="输入提示" colortheme="primary"></s-input>
       <s-input placeholder="输入提示" colortheme="success"></s-input>
       <s-input value="默认文本" colortheme="warning"></s-input>
-      <s-input value="小1" err="用户名不足两个汉字" colortheme="danger"></s-input>
+      <s-input value="小1" error="用户名不足两个汉字" colortheme="danger"></s-input>
     </div>
   </div>
 </template>

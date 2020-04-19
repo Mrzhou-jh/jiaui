@@ -7,9 +7,9 @@
       :placeholder="placeholder"
       :value="value"
     />
-    <template v-if="err">
-      <s-svg-icon :class="{ err: err }" iconname="jinggao"></s-svg-icon>
-      <span :class="{ err: err }">{{ err }}</span>
+    <template v-if="error">
+      <s-svg-icon :class="{ error: error }" iconname="jinggao"></s-svg-icon>
+      <span :class="{ error: error }">{{ error }}</span>
     </template>
   </div>
 </template>
@@ -23,7 +23,7 @@ export default {
     value: {
       type: String
     },
-    err: {
+    error: {
       type: String
     },
     colortheme: {
@@ -72,7 +72,7 @@ $danger: #f56c6c;
 }
 @mixin danger {
   color: rgb(17, 17, 17);
- // background-color: $danger;
+  // background-color: $danger;
   border-color: $danger;
 }
 .s-input {
@@ -97,7 +97,7 @@ $danger: #f56c6c;
   &:focus,
   &:hover {
     color: $primary;
-    border-color: #c6e2ff;
+    border-color: #8cc3fd;
     //background-color: #ecf5ff;
   }
 }
@@ -107,15 +107,14 @@ $danger: #f56c6c;
   &:focus,
   &:hover {
     //background: #66b1ff;
-    border-color: #66b1ff;
+    border-color: #1a85f7;
     color: rgb(17, 17, 17);
   }
   &.plain {
     color: $primary;
-   // background: #ecf5ff;
-    border-color: #b3d8ff;
+    // background: #ecf5ff;
+    border-color: #459efc;
   }
-
   &.plain {
     &:focus,
     &:hover {
@@ -134,7 +133,7 @@ $danger: #f56c6c;
   }
   &.plain {
     color: $success;
-   // background: #f0f9eb;
+    // background: #f0f9eb;
     border-color: #c2e7b0;
     .svgicon {
       fill: $success;
@@ -159,7 +158,7 @@ $danger: #f56c6c;
     color: #909399;
     background: #f4f4f5;
     border-color: #d3d4d6;
-    
+
     &:focus,
     &:hover {
       @include info;
@@ -177,11 +176,11 @@ $danger: #f56c6c;
     border-color: #ebb563;
     color: rgb(17, 17, 17);
   }
-  
+
   /*  PLAIN WARNING STYLE*/
   &.plain {
     color: #e6a23c;
-   // background: #fdf6ec;
+    // background: #fdf6ec;
     border-color: #f5dab1;
     &:focus,
     &:hover {
@@ -196,7 +195,7 @@ $danger: #f56c6c;
 
   &:focus,
   &:hover {
-   // background: #f78989;
+    // background: #f78989;
     border-color: #f78989;
     color: rgb(17, 17, 17);
   }
@@ -219,10 +218,9 @@ $danger: #f56c6c;
 /*  PLAIN STYLE*/
 .plain:focus,
 .plain:hover {
- // background: rgb(17, 17, 17);
+  // background: rgb(17, 17, 17);
   border-color: #409eff;
   color: #409eff;
-
 }
 
 /*  ROUND */
@@ -244,7 +242,6 @@ $danger: #f56c6c;
   }
 }
 
-
 // .wrapper input:hover {
 //   border-color: #666;
 // }
@@ -254,7 +251,7 @@ $danger: #f56c6c;
 // .wrapper input:focus {
 //   box-shadow: 0 1px 3px inset;
 // }
-.err {
+.error {
   fill: red;
   color: red;
   font-size: 14px;
