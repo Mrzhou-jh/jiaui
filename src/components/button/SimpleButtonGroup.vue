@@ -5,11 +5,10 @@
 </template>
 <script>
 export default {
-  name: "ButtonGroup",
+  name: "SimpleButtonGroup",
   mounted() {
     for (const node of this.$el.children) {
       let name = node.nodeName.toLowerCase();
-      //console.log(name);
       if (name !== "button") {
         console.warn(`s-button-group的子元素必须为s-button你写的是${name}`);
       }
