@@ -1,5 +1,5 @@
 <template>
-  <div class="j-button-group">
+  <div class="s-button-group">
     <slot></slot>
   </div>
 </template>
@@ -7,38 +7,35 @@
 export default {
   name: "ButtonGroup",
   mounted() {
-    console.log(this.$el.element);
-
     for (const node of this.$el.children) {
       let name = node.nodeName.toLowerCase();
-      console.log(name);
+      //console.log(name);
       if (name !== "button") {
-        console.warn(`j-button-group的子元素必须为g-button你写的是${name}`);
+        console.warn(`s-button-group的子元素必须为s-button你写的是${name}`);
       }
     }
   }
 };
 </script>
 <style>
-.j-button-group {
+.s-button-group {
   display: inline-flex;
   vertical-align: middle;
-  margin-left: 1em;
 }
-.j-button-group .j-button {
+.s-button-group .s-button {
   margin: 0 0 0 -1px;
   border-radius: 0;
+  border-color: #fff;
 }
-.j-button-group .j-button:hover {
+.s-button-group .s-button:hover {
   position: relative;
   z-index: 1;
-  border-color: red;
 }
 
-.j-button-group .j-button:first-child {
+.s-button-group .s-button:first-child {
   border-radius: 4px 0 0 4px;
 }
-.j-button-group .j-button:last-child {
+.s-button-group .s-button:last-child {
   border-radius: 0 4px 4px 0;
 }
 </style>

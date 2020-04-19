@@ -1,9 +1,7 @@
 <template>
-
     <svg class="svgicon" :class="{ 'loading-animation': loading }">
       <use :xlink:href="`#i-${iconname}`"></use>
     </svg>
-  
 </template>
 <script>
 export default {

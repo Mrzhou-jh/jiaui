@@ -2,7 +2,7 @@
   <div class="wrapper">
     <input type="text" :placeholder="placeholder" :value="value" />
     <template v-if="err">
-      <j-svg-icon :class="{ err: err }" iconname="jinggao"></j-svg-icon
+      <s-svg-icon :class="{ err: err }" iconname="jinggao"></s-svg-icon
       ><span :class="{ err: err }">{{ err }}</span></template
     >
   </div>
