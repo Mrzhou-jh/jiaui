@@ -3,7 +3,7 @@ import App from "./App.vue";
 import router from "./router";
 import SButton from "./components/button/SimpleButton.vue";
 import SButtonGroup from "./components/button/SimpleButtonGroup.vue";
-import SInput from "./components/input/Input.vue";
+import SInput from "./components/input/SimpleInput.vue";
 import SSvgIcon from "./components/svgicon/SvgIcon.vue";
 
 Vue.config.productionTip = false;
