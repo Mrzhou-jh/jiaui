@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <input
-      :class="['s-input',colortheme,{ [`icon-${iconPosition}`]:true,'round': round, 'plain': plain, 'disabled': disabled}]"
+      :class="['s-input',colortheme,{'round': round, 'plain': plain, 'disabled': disabled}]"
       :disabled="disabled"
       type="text"
       :placeholder="placeholder"

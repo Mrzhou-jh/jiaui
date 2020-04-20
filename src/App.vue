@@ -68,6 +68,8 @@
       <s-input value="默认文本" colortheme="warning"></s-input>
       <s-input value="小1" error="用户名不足两个汉字" colortheme="danger"></s-input>
     </div>
+
+    <s-tabs-demo></s-tabs-demo>
   </div>
 </template>
 
